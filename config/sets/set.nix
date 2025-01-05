@@ -15,16 +15,17 @@
 
       # Set tabs to 4 spaces
       tabstop = 4;
-      softtabstop = 4;
-      showtabline = 4;
+      #softtabstop = 4;
+      #showtabline = 4;
       expandtab = true;
 
       # Enable auto indenting and set it to spaces
-      smartindent = true;
+      autoindent = true;
+      smartindent = false;
       shiftwidth = 4;
 
       # Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
-      breakindent = true;
+      breakindent = false;
 
       # Enable incremental searching
       hlsearch = true;
@@ -47,7 +48,7 @@
       grepformat = "%f:%l:%c:%m";
 
       # Decrease updatetime
-      updatetime = 50; # faster completion (4000ms default)
+      updatetime = 100; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
       completeopt = [
