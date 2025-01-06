@@ -8,8 +8,10 @@
     imports = [
         ./Tex.nix
     ];
-
-    config = lib.mkIf config.dap.enable {
+    options = {
+        tex.enable = lib.mkEnableOption "Enable tex module";
+    };
+    config = lib.mkIf config.tex.enable {
         Tex.enable = lib.mkDefault true;
     };
 
