@@ -19,6 +19,7 @@
     ./telescope
     ./ui
     ./utils
+    ./tex
   ];
 
   bufferlines.enable = lib.mkDefault true;
@@ -38,4 +39,5 @@
   telescope.enable = lib.mkDefault true;
   ui.enable = lib.mkDefault true;
   utils.enable = lib.mkDefault true;
+  tex.enable = lib.mkDefault true;
 }
