@@ -20,6 +20,7 @@
     ./ui
     ./utils
     ./tex
+    ./clip
   ];
 
   bufferlines.enable = lib.mkDefault true;
@@ -40,4 +41,6 @@
   ui.enable = lib.mkDefault true;
   utils.enable = lib.mkDefault true;
   tex.enable = lib.mkDefault true;
+  clip.enable = lib.mkDefault true;
+
 }
