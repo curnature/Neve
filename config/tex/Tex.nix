@@ -21,10 +21,10 @@
             vimtex = {
                 enable = true;
                 texlivePackage = pkgs.texlive.combined.scheme-full;
-                zathuraPackage = pkgs.zathura;
+                #zathuraPackage = pkgs.zathura;
                 #
                 settings = {
-                    view_method = "zathura";
+                    #view_method = "zathura_simple";
                 };
 
             };
