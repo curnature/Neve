@@ -21,8 +21,14 @@
             vimtex = {
                 enable = true;
                 texlivePackage = pkgs.texlive.combined.scheme-full;
-                zathuraPackage = pkgs.zathura.override { useMupdf = true; }; # Use Zathura with MuPDF
+                zathuraPackage = pkgs.zathura;
+                #
+                settings = {
+                    view_method = "zathura";
+                };
+
             };
+ 
         };
         
         extraConfigLuaPre = ''
