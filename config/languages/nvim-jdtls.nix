@@ -22,7 +22,7 @@ in
 
       };
       # configuration = "/path/to/configuration";
-      initOptions = {
+      settings.init_options = { # initOptions = {
         bundles = [
           "/nix/store/b9ib40q36wxjl4xs5lng263lflz1fsi7-vscode-extension-vscjava-vscode-java-debug-0.49.2023032407/share/vscode/extensions/vscjava.vscode-java-debug/server/com.microsoft.java.debug.plugin-0.44.0.jar"
           "${javaTestPath}"
