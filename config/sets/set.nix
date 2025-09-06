@@ -11,20 +11,21 @@
     opts = {
       # Enable relative line numbers
       number = true;
-      relativenumber = true;
+      relativenumber = false;
 
-      # Set tabs to 2 spaces
-      tabstop = 2;
-      softtabstop = 2;
-      showtabline = 2;
+      # Set tabs to 4 spaces
+      tabstop = 4;
+      #softtabstop = 4;
+      #showtabline = 4;
       expandtab = true;
 
       # Enable auto indenting and set it to spaces
-      smartindent = true;
-      shiftwidth = 2;
+      autoindent = true;
+      smartindent = false;
+      shiftwidth = 4;
 
       # Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
-      breakindent = true;
+      breakindent = false;
 
       # Enable incremental searching
       hlsearch = true;
@@ -47,7 +48,7 @@
       grepformat = "%f:%l:%c:%m";
 
       # Decrease updatetime
-      updatetime = 50; # faster completion (4000ms default)
+      updatetime = 100; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
       completeopt = [
@@ -68,7 +69,7 @@
       signcolumn = "yes";
 
       # Enable cursor line highlight
-      cursorline = false; # Highlight the line where the cursor is located
+      cursorline = true; # Highlight the line where the cursor is located
 
       # Set fold settings
       # These options were reccommended by nvim-ufo
